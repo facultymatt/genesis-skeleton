@@ -6,5 +6,6 @@ angular
   ])
   .run(['$rootScope', 'app.services.api', function($root, api) {
     $root.package = api.get({ entity: 'package' });
+    $root.hashPrefix = Modernizr.history === true ? '' : '/#';
   }])
 ;

@@ -18,5 +18,6 @@ angular
         templateUrl: 'views/errors/index.html'
       })
     ;
+    $location.html5Mode(Modernizr.history);
   }])
 ;
